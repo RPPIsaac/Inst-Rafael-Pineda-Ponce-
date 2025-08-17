@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes y Docentes</title>
+    <style>
+        body {
+            font-family: 'Arial', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilos del menú */
+        .menu {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            gap: 100px;
+            background-color: #3b5998;
+            margin: 0;
+        }
+
+        .menu li {
+            position: relative;
+            background: #08f027;
+            padding: 15px;
+            color: rgb(8, 7, 7);
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu li:hover {
+            background-color: #06b214;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgb(35, 72, 238);
+            color: rgba(21, 15, 179, 0.9);
+            border: 5px solid #0d0c0c;
+            border-radius: 10px;
+        }
+
+        .submenu table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .submenu td, .submenu th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li>
+            DOCENTES
+            <div class="submenu">
+                <table>
+                    <tr><th>DOCENTES</th></tr>
+                  <tr><td><a href="Docentes.pdf" target="_blank"><button>Docentes 2025</button></a></td></tr>
+                    <tr><td><a href="Enlace"><button>Docentes 2024</button></a></td></tr>
+                    <tr><td><a href="Enlace"><button>Docentes 2023</button></a></td></tr>
+                </table>
+            </div>
+        </li>
+        <li>
+            ESTUDIANTES
+            <div class="submenu">
+                <table>
+                    <tr><th>ESTUDIANTES</th></tr>
+                    <tr><td><a href="Enlace"><button>Estudiantes 2025</button></a></td></tr>
+                    <tr><td><a href="Enlace"><button>Estudiantes 2024</button></a></td></tr>
+                    <tr><td><a href="Enlace"><button>Estudiantes 2023</button></a></td></tr>
+                </table>
+            </div>
+        </li>
+    </ul>
+
+    <!-- Botón para regresar a la página principal -->
+    <div style="text-align: center; margin-top: 20px;">
+       
+    <a href="index.html" class="button">Regresar a página principal</a>
+    </div>
+</body>
+</html>
